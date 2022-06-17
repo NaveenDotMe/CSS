@@ -10,9 +10,22 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS Traversing</title>
+
+    <style>
+        /*body > main > section > article > section > div > ul > li > ol > li:nth-child(3) {
+            color: red;
+            font-size: 40px;
+        }*/
+
+        body > main:nth-child(4) > section:nth-child(2) > article > section > div:nth-child(3) > ul > li:nth-child(4) > ol > li:nth-child(3) {
+            color: red;
+            font-size: 20px;
+        }
+
+    </style>
+
 </head>
 <body>
-
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam delectus dicta, distinctio esse
     exercitationem id, mollitia non nostrum odit omnis optio perspiciatis quidem reprehenderit rerum totam
     ut vero. Totam.</p>
