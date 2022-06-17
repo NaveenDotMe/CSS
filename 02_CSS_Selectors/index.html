@@ -79,7 +79,7 @@
 
         /*pseudo Element --> Select specific part of a selected element text */
 
-        p::first-letter {
+        /*p::first-letter {
             font-size: 50px;
             color: red;
         }
@@ -95,19 +95,30 @@
 
         li::marker{
           color: orange;
-        }
+        }*/
 
-        li{
+        /*Change list style*/
+        /*li{
             list-style: lower-greek;
+        }*/
+
+        /*CSS Combinators*/
+        /*Decendent Combinator*/
+        header h1 {
+            color: white;
+            background-color: red;
         }
 
     </style>
 
 </head>
 <body>
-
+<h1>Outside header</h1>
 <header>
-    <h1 class="selectedPara" id="my-header">Hello 01</h1>
+    <h1 class="selectedpara" id="my-header">Inside Header</h1>
+    <section>
+        <h1>Hello</h1>
+    </section>
     <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi atque deleniti explicabo inventore ipsa,
         ipsam necessitatibus odio quaerat quas quod rem rerum, unde, voluptate voluptates. A aliquid expedita
         quo?<br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus iste neque nobis nostrum provident!
