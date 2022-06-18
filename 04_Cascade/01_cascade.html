@@ -1,0 +1,52 @@
+<!--/**
+    * Created by : Naveen Pabhath
+    * Date : 6/18/2022
+    * Time : 10:17 AM
+    * Project Name : CSS
+**/-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cascade case 2</title>
+    <style>
+        /*(1)*/
+        h1 {
+            color: brown;
+        }
+
+        /*(100)*/
+        #h1ID {
+            color: red;
+        }
+
+        /*10*/
+        .h1Class {
+            color: deeppink;
+        }
+
+        /*1 + 1 + 1 = (3)*/
+        body > section > h1 {
+            color: green;
+        }
+
+        /*1 + 1 + 100 =(102)*/
+        section > h1#h1ID {
+            color: aqua;
+        }
+
+        /*1 + 1 + 10 = (12)*/
+        section h1:first-child {
+            color: blue;
+        }
+
+        /*aqua(102), red(100), blue(12), deeppink(10), green(3),brown(1) */
+    </style>
+</head>
+<body>
+<section>
+    <h1 class="h1Class" id="h1ID">Hello There</h1>
+</section>
+</body>
+</html>
