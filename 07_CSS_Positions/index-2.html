@@ -1,7 +1,7 @@
 <!--/**
     * Created by : Naveen Pabhath
     * Date : 6/19/2022
-    * Time : 9:17 AM
+    * Time : 9:45 AM
     * Project Name : CSS
 **/-->
 
@@ -9,7 +9,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CSS Positions 02</title>
+    <title>CSS Positions 02 (Absolute)</title>
     <!--Positions-->
     <!--
     *Static (Default)
@@ -20,17 +20,18 @@
     -->
     <style>
         h1{
-            width: 200px;
-            position: relative;
             border: 2px solid red;
-            left: 250px;
+            position: absolute;
+            /*Remove from the normal flow
+            then its position according to the nearest parent
+            */
+            right: 0;
+            top: 0;
+            left: 0;
+            bottom: 0;
         }
         h2{
-            position: relative;
-            border: 2px solid green;
-            left: 100px;
-            width: 300px;
-            top: 50px;
+
         }
     </style>
 </head>
