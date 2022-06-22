@@ -85,7 +85,8 @@
             margin: auto;
             /*transform: rotate(45deg);*/
         }
-        body>div>div{
+
+        body > div > div {
             height: 150px;
             width: 150px;
             background: red;
@@ -98,13 +99,76 @@
             margin: auto;
         }
 
+        body > div:nth-child(10) {
+            width: 200px;
+            height: 100px;
+            right: 0;
+            left: 0;
+            top: 0;
+            margin: auto;
+            border-bottom-left-radius: 150px;
+            border-bottom-right-radius: 150px;
+
+        }
+
+        body > div:nth-child(11) {
+            width: 200px;
+            height: 100px;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            border-top-right-radius: 150px;
+            border-top-left-radius: 150px;
+        }
+
+        section>div{
+            width: 200px;
+            height: 200px;
+            background: white;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border-radius: 100px;
+        }
+        section>div>div{
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
     </style>
 </head>
 <body>
-<section></section>
-<section></section>
-<section></section>
-<section></section>
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
 
 <!--For Circles-->
 <div></div>
@@ -117,5 +181,9 @@
     <!--Center Circle-->
     <div></div>
 </div>
+
+<!--Top and Bottom Mid Circle-->
+<div></div>
+<div></div>
 </body>
 </html>
