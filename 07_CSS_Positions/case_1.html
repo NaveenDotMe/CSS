@@ -10,31 +10,74 @@
 <head>
     <meta charset="UTF-8">
     <title>Case_01</title>
+    <link href="assets/css/normalize.css" rel="stylesheet">
+
     <style>
-        section{
+        section {
             height: 50vh;
             width: 50vw;
             position: absolute;
         }
-        body>section:nth-child(1){
+
+        body > section:nth-child(1) {
             background: red;
             left: 0;
             top: 0;
         }
-        body>section:nth-child(2){
+
+        body > section:nth-child(2) {
             background: green;
             right: 0;
             top: 0;
         }
-        body>section:nth-child(3){
+
+        body > section:nth-child(3) {
             background: orange;
             bottom: 0;
             left: 0;
         }
-        body>section:nth-child(4){
+
+        body > section:nth-child(4) {
             background: deeppink;
             bottom: 0;
             right: 0;
+        }
+
+        body>div {
+            background: white;
+            width: 150px;
+            height: 150px;
+            z-index: 2;
+            position: absolute;
+        }
+
+        body>div:nth-child(5){
+            left: 0;
+            top: 0;
+            border-bottom-right-radius: 150px;
+        }
+        body>div:nth-child(6){
+            right: 0;
+            top: 0;
+            border-bottom-left-radius: 150px;
+        }
+        body>div:nth-child(7){
+            left: 0;
+            bottom: 0;
+            border-top-right-radius: 150px;
+        }
+        body > div:nth-child(8) {
+            right: 0;
+            bottom: 0;
+            border-top-left-radius: 150px;
+        }
+        body > div:nth-child(9) {
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+
         }
 
     </style>
@@ -44,5 +87,14 @@
 <section></section>
 <section></section>
 <section></section>
+
+<!--For Circles-->
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+<!--For Middle Box-->
+<div></div>
 </body>
 </html>
