@@ -43,7 +43,7 @@
             right: 0;
         }
 
-        body>div {
+        body > div {
             background: white;
             width: 150px;
             height: 150px;
@@ -51,33 +51,51 @@
             position: absolute;
         }
 
-        body>div:nth-child(5){
+        body > div:nth-child(5) {
             left: 0;
             top: 0;
             border-bottom-right-radius: 150px;
         }
-        body>div:nth-child(6){
+
+        body > div:nth-child(6) {
             right: 0;
             top: 0;
             border-bottom-left-radius: 150px;
         }
-        body>div:nth-child(7){
+
+        body > div:nth-child(7) {
             left: 0;
             bottom: 0;
             border-top-right-radius: 150px;
         }
+
         body > div:nth-child(8) {
             right: 0;
             bottom: 0;
             border-top-left-radius: 150px;
         }
+
         body > div:nth-child(9) {
+            width: 200px;
+            height: 200px;
             top: 0;
             left: 0;
             bottom: 0;
             right: 0;
             margin: auto;
-
+            /*transform: rotate(45deg);*/
+        }
+        body>div>div{
+            height: 150px;
+            width: 150px;
+            background: red;
+            border-radius: 100px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            top: 0;
+            margin: auto;
         }
 
     </style>
@@ -95,6 +113,9 @@
 <div></div>
 
 <!--For Middle Box-->
-<div></div>
+<div>
+    <!--Center Circle-->
+    <div></div>
+</div>
 </body>
 </html>
