@@ -34,7 +34,7 @@
 
         header > ul {
             position: absolute;
-            font-size: 24px;
+            font-size: 20px;
             font-family: 'Lobster', cursive;
             display: inline-block;
             right: 30px;
@@ -69,17 +69,36 @@
         main {
             position: relative;
         }
-        main>section{
+
+        main > section {
             margin-left: 150px;
             padding: 10px;
             /*position: relative;
             left: 160px;
             display: inline;*/
         }
-        main>nav>ul{
+
+        main > nav > ul {
+            list-style: none;
+            flood-color: white;
+            font-size: 20px;
+            font-family: 'Lobster', cursive;
+            margin-top: 30px;
 
         }
-
+        main>nav>ul>li{
+            padding-bottom: 20px;
+        }
+        main>nav>ul>li>a{
+            text-decoration: none;
+            color: white;
+            border-bottom: 2px solid white;
+            padding-bottom: 3px;
+        }
+        main>nav>ul>li>a:hover{
+            cursor: pointer;
+            color: red;
+        }
         /*Main Content End*/
 
 
@@ -101,10 +120,10 @@
 <main>
     <nav>
         <ul>
-            <li>Home</li>
-            <li>Service</li>
-            <li>Contacts</li>
-            <li>About Us</li>
+            <li><a href="index-1.html">Home</a></li>
+            <li><a href="index-2.html">Service</a></li>
+            <li><a href="index-3.html">Contacts</a></li>
+            <li><a href="#">About Us</a></li>
 
         </ul>
     </nav>
