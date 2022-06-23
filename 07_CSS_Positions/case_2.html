@@ -61,11 +61,12 @@
         /*Main Content Start*/
 
         main > nav {
-            width: 150px;
+            width: 200px;
             background-color: darkviolet;
             position: absolute;
             top: 0;
             bottom: 0;
+
         }
 
         main {
@@ -73,7 +74,7 @@
         }
 
         main > section {
-            margin-left: 150px;
+            margin-left: 200px;
             padding: 10px;
             /*position: relative;
             left: 160px;
@@ -96,15 +97,59 @@
         main > nav > ul > li > a {
             text-decoration: none;
             color: white;
-            border-bottom: 2px solid white;
+            /*border-bottom: 2px solid white;*/
             padding-bottom: 3px;
             margin-left: 10px;
+        }
+
+        main > nav > ul > li > i {
+            color: white;
+            font-size: 20px;
         }
 
         main > nav > ul > li > a:hover {
             cursor: pointer;
             color: red;
         }
+
+        /*main>section Content Started*/
+        main > section > section {
+            /*border: 2px solid red;*/
+            height: 300px;
+            position: relative;
+        }
+
+        main > section > section > div {
+            border: 2px solid black;
+            position: absolute;
+            height: 100%;
+            width: calc(100% / 3);
+        }
+
+        main > section > section > div:nth-child(1) {
+            left: 0;
+            /*background: url("assets/images/got.jpg");*/
+            background-image: url("assets/images/got.jpg");
+            background-size: cover;
+        }
+
+        main > section > section > div:nth-child(3) {
+            left: 0;
+            right: 0;
+            margin: auto;
+            /*left: calc(100% / 3);*/
+            background-image: url("assets/images/got2.jpg");
+            background-size: cover;
+        }
+
+        main > section > section > div:nth-child(2) {
+            right: 0;
+            /*left: calc((100% / 3)*2);*/
+            background-image: url("assets/images/got3.jpg");
+            background-size: cover;
+        }
+
+        /*main>section Content Ended*/
 
         /*Main Content End*/
 
@@ -136,9 +181,10 @@
     </nav>
     <section>
         <section>
-            <div><img alt="" src=""></div>
-            <div><img alt="" src=""></div>
-            <div><img alt="" src=""></div>
+            <div><!--<img src="assets/images/got.jpg" alt="">--></div>
+            <div><!--<img src="assets/images/got2.jpg" alt="">--></div>
+            <div><!--<img src="assets/images/got3.jpg" alt="">--></div>
+
         </section>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore iure iusto laborum magnam nesciunt nobis
