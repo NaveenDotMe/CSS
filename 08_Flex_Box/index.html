@@ -1,0 +1,52 @@
+<!--/**
+    * Created by : Naveen Pabhath
+    * Date : 6/23/2022
+    * Time : 11:53 PM
+    * Project Name : CSS
+**/-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Box Layout</title>
+    <style>
+        body > section {
+            position: relative;
+            height: 300px;
+            border: 1px solid red;
+        }
+
+        body > section > div {
+            height: 100%;
+            width: 25%;
+            border: 1px solid red;
+            position: absolute;
+        }
+
+        body > section > div:nth-child(1) {
+            left: 0;
+        }
+
+        body > section > div:nth-child(2) {
+            left: 25%;
+        }
+
+        body > section > div:nth-child(3) {
+            left: 50%;
+        }
+
+        body > section > div:nth-child(4) {
+            left: 75%;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+</body>
+</html>
