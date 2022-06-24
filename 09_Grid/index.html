@@ -1,0 +1,43 @@
+<!--/**
+    * Created by : Naveen Pabhath
+    * Date : 6/24/2022
+    * Time : 12:14 PM
+    * Project Name : CSS
+**/-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Grid Layout</title>
+
+    <style>
+        section{
+            width: 500px;
+            height: 500px;
+            border: 2px solid red;
+            display: grid;
+            /*Column 2 and Row 5*/
+            grid-template-rows: 100px 100px 100px 100px 100px;
+            grid-template-columns: 250px 250px;
+        }
+        section>div{
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+</body>
+</html>
