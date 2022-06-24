@@ -12,16 +12,25 @@
     <title>CSS Grid Layout</title>
 
     <style>
-        section{
+        section {
             width: 500px;
             height: 500px;
             border: 2px solid red;
             display: grid;
             /*Column 2 and Row 5*/
-            grid-template-rows: 100px 100px 100px 100px 100px;
-            grid-template-columns: 250px 250px;
+            /*grid-template-rows: 100px 100px 100px 100px 100px;
+            grid-template-columns: 250px 250px;*/
+
+            /*Use Repeat*/
+            /*grid-template-rows: repeat(5,100px);
+            grid-template-columns: repeat(2,250px);*/
+
+            /*Use fr (fragments)*/
+            grid-template-rows: repeat(5, 1fr);
+            grid-template-columns: repeat(2, 1fr);
         }
-        section>div{
+
+        section > div {
             border: 1px solid green;
         }
     </style>
