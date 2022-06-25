@@ -10,19 +10,24 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS_Transitions</title>
-    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link href="assets/css/normalize.css" rel="stylesheet">
     <style>
-        section{
+        section {
             width: 200px;
             height: 150px;
             background: red;
+            transition-property: width, height, background; /*all*/
+            transition-duration: 5s, 3s, 10s;
+            /*transition: all 5s;*/
         }
-        section:hover{
+
+        section:hover {
             width: 400px;
             height: 300px;
             background: green;
-            transition-property: width,height,background; /*all*/
-            transition-duration: 5s,3s,10s;
+            transition-property: width, height, background; /*all*/
+            transition-duration: 5s, 3s, 10s;
+            transition-delay: 2s;
         }
     </style>
 </head>
