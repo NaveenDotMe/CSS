@@ -149,9 +149,10 @@
         /*footer content ended*/
 
         @media all and (max-width: 425px) {
-            header{
+            header {
                 height: 120px;
             }
+
             header > img {
                 position: absolute;
                 top: 10px;
@@ -160,6 +161,7 @@
                 margin: auto;
                 width: 180px;
             }
+
             header > ul {
                 bottom: 10px;
                 font-size: 18px;
@@ -169,20 +171,53 @@
                 width: max-content;
                 padding-left: 0;
             }
+
             main > nav {
                 display: none;
             }
+
             main > section {
                 margin-left: 0;
             }
+
             main > section > section {
                 height: 650px;
                 flex-direction: column;
             }
         }
 
+        @media all and (min-width: 425px) and (max-width: 768px) {
+            header > img {
+                width: 160px;
+            }
+            header > ul {
+                position: absolute;
+                right: 30px;
+                bottom: 0;
+                top: 0;
+                margin: auto;
+                height: max-content;
+                font-size: 20px;
+            }
+
+            main > nav {
+                width: 200px;
+            }
+            main > nav > ul {
+                font-size: 20px;
+            }
+            main > section {
+                margin-left: 200px;
+            }
+            main > section > section {
+                height: 700px;
+                flex-direction: column;
+            }
+        }
+
     </style>
 </head>
+
 <body>
 
 <header>
