@@ -1,0 +1,237 @@
+<!--/**
+    * Created by : Naveen Pabhath
+    * Date : 6/19/2022
+    * Time : 12:44 PM
+    * Project Name : CSS
+**/-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple web layout</title>
+    <meta content="CMJD,GDSE,ABSD" name="keywords">
+    <meta content="This is my test Web page" name="description">
+    <meta content="IJSE" name="owner">
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="assets/css/fonts/css/all.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <style>
+        /*Header Start*/
+
+        header {
+            position: relative;
+            height: 80px;
+            /*border: 1px solid red;*/
+            box-shadow: 0px 5px 15px 1px #211f1f;
+        }
+
+        header > img {
+            width: 150px;
+            margin: 21px;
+        }
+
+        header > ul {
+            position: absolute;
+            font-size: 20px;
+            font-family: 'Lobster', cursive;
+            display: inline-block;
+            right: 30px;
+            list-style: none;
+            bottom: 0;
+            top: 0;
+        }
+
+        header > ul > li {
+            padding: 0px 10px 0px 10px;
+            display: inline;
+            /*border-bottom: 2px solid black;*/
+        }
+
+        header > ul > li:hover {
+            cursor: pointer;
+            color: red;
+        }
+
+        /*Header End*/
+
+
+        /*Main Content Start*/
+
+        main > nav {
+            width: 200px;
+            background-color: darkviolet;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+
+        }
+
+        main {
+            position: relative;
+        }
+
+        main > section {
+            margin-left: 200px;
+            padding: 10px;
+            min-height: 700px;
+            /*position: relative;
+            left: 160px;
+            display: inline;*/
+        }
+
+        main > nav > ul {
+            list-style: none;
+            flood-color: white;
+            font-size: 20px;
+            font-family: 'Lobster', cursive;
+            margin-top: 30px;
+
+        }
+
+        main > nav > ul > li {
+            padding-bottom: 20px;
+        }
+
+        main > nav > ul > li > a {
+            text-decoration: none;
+            color: white;
+            /*border-bottom: 2px solid white;*/
+            padding-bottom: 3px;
+            margin-left: 10px;
+        }
+
+        main > nav > ul > li > i {
+            color: white;
+            font-size: 20px;
+        }
+
+        main > nav > ul > li > a:hover {
+            cursor: pointer;
+            color: red;
+        }
+
+        /*main>section Content Started*/
+
+        main > section > section {
+            /*border: 2px solid red;*/
+            height: 300px;
+            position: relative;
+        }
+
+        main > section > section > div {
+            /*border: 2px solid black;*/
+            position: absolute;
+            height: 100%;
+            width: calc(100% / 3);
+        }
+
+        main > section > section > div:nth-child(1) {
+            left: 0;
+            /*background: url("assets/images/got.jpg");*/
+            background-image: url("assets/images/got.jpg");
+            background-size: cover;
+        }
+
+        main > section > section > div:nth-child(2) {
+            border-left: 5px solid white;
+            /*left: 0;
+            right: 0;
+            margin: auto;*/
+            left: calc(100% / 3);
+            background-image: url("assets/images/got2.jpg");
+            background-size: cover;
+        }
+
+        main > section > section > div:nth-child(3) {
+            border-left: 5px solid white;
+            right: 0;
+            /*left: calc((100% / 3)*2);*/
+            background-image: url("assets/images/got3.jpg");
+            background-size: cover;
+        }
+
+        /*main>section Content Ended*/
+
+        /*Main Content End*/
+
+        /*Footer Content Started*/
+
+        body > footer {
+            height: 70px;
+            background-color: #211f1f;
+        }
+
+        body > footer > p {
+            margin-top: 0;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-size: 20px;
+
+        }
+
+        /*Footer Content Ended*/
+
+    </style>
+</head>
+<body>
+
+<header>
+    <img alt="" src="assets/logo/ijse.png">
+    <ul>
+        <li>Home</li>
+        <li>Service</li>
+        <li>Contacts</li>
+        <li>About Us</li>
+
+    </ul>
+</header>
+
+<main>
+    <nav>
+        <ul>
+            <li><i class="fa-solid fa-house"></i><a href="index-1.html">Home</a></li>
+            <li><i class="fa-solid fa-earth-asia"></i><a href="index-2.html">Service</a></li>
+            <li><i class="fa-solid fa-address-book"></i><a href="index-3.html">Contacts</a></li>
+            <li><i class="fa-solid fa-circle-info"></i><a href="#">About Us</a></li>
+
+        </ul>
+    </nav>
+    <section>
+        <section>
+            <div><!--<img src="assets/images/got.jpg" alt="">--></div>
+            <div><!--<img src="assets/images/got2.jpg" alt="">--></div>
+            <div><!--<img src="assets/images/got3.jpg" alt="">--></div>
+
+        </section>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore iure iusto laborum magnam nesciunt nobis
+            numquam suscipit temporibus vero vitae. A corporis minus natus, nihil optio quasi quibusdam quis
+            repudiandae?</p>
+        <p>Dolorum eligendi et in incidunt, magni porro quas quo rem? Alias aspernatur atque consequatur dolore
+            explicabo magnam praesentium provident quae, reiciendis repellendus. Illum laudantium libero nobis quod
+            vero! Autem, nam!</p>
+        <p>Accusamus dicta doloremque doloribus eaque est exercitationem magni molestias ratione soluta voluptatibus.
+            Accusamus aspernatur assumenda atque autem culpa dolorem eum, molestias, odit officiis pariatur quam quo
+            soluta tenetur velit voluptatibus.</p>
+        <p>A aliquam aliquid at aut cumque dicta doloremque earum error est, maiores maxime, minus natus nesciunt non
+            odio odit possimus quae quaerat quisquam quo recusandae repellat voluptatibus! Assumenda exercitationem,
+            veritatis?</p>
+        <p>Aliquam animi architecto aut dicta dolor, dolore dolorum excepturi explicabo facere in ipsam itaque labore
+            maiores maxime modi neque non optio, quasi quia quisquam repellat repudiandae soluta temporibus tenetur
+            velit.</p>
+
+    </section>
+</main>
+
+<footer>
+    <p><small>Developed By IJSE</small></p>
+</footer>
+
+</body>
+</html>
