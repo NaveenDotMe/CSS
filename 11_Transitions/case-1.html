@@ -1,0 +1,83 @@
+<!--/**
+    * Created by : Naveen Pabhath
+    * Date : 6/25/2022
+    * Time : 11:09 PM
+    * Project Name : CSS
+**/-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 01</title>
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <link href="assets/css/fonts/css/all.css" rel="stylesheet">
+
+    <style>
+        body>nav{
+            /*border: 1px solid red;*/
+            width: 220px;
+            height: 500px;
+            top: 100px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            right: 160px;
+        }
+        nav>div{
+            height: 40px;
+            border: 1px solid green;
+            display: inline-block;
+            position: relative;
+            background: darkviolet;
+            box-shadow: 5px 5px 10px 0px black;
+        }
+        nav>div>h3{
+            margin: 0;
+            padding: 7px;
+            display: inline-block;
+            font-size: 20px;
+        }
+        nav>div>i{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            font-size: 25px;
+            color: white;
+        }
+        nav>div:hover{
+            background: green;
+            left: 155px;
+            cursor: pointer;
+            transition-property: all;
+            transition-duration: 5s;
+        }
+
+    </style>
+</head>
+<body>
+<nav>
+    <div>
+        <h3>Menu one</h3>
+        <i class="fa-solid fa-dragon"></i>
+    </div>
+    <div>
+        <h3>Menu two</h3>
+        <i class="fa-solid fa-jedi"></i>
+    </div>
+    <div>
+        <h3>Menu three</h3>
+        <i class="fa-solid fa-motorcycle"></i>
+    </div>
+    <div>
+        <h3>Menu four</h3>
+        <i class="fa-solid fa-user-secret"></i>
+    </div>
+    <div>
+        <h3>Menu five</h3>
+        <i class="fa-solid fa-poo-storm"></i>
+    </div>
+</nav>
+</body>
+</html>
