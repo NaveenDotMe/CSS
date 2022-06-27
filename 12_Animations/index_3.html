@@ -18,18 +18,22 @@
             animation-name: test;
             animation-duration: 5s;
             position: relative;
-            animation-iteration-count: 1;
-            animation-direction: normal;
-            /*Last Frame Holded*/
-            animation-fill-mode: forwards;
+            animation-iteration-count: 3; /*1...9 | infinity*/
+            animation-direction: alternate; /*revers | alternate | alternate-reverse*/
+
+            /*Last Frame Hold After Ending the round*/
+            animation-fill-mode: both; /*forwards | backwards */
+            /*animation-delay: 5s;*/
         }
 
         @keyframes test {
             from {
                 left: 0;
+                background-color: blue;
             }
             to {
                 left: 500px;
+                background-color: green;
             }
         }
 
