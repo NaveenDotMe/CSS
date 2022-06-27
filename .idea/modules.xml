@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/09_Grid/09_Grid.iml" filepath="$PROJECT_DIR$/09_Grid/09_Grid.iml" />
       <module fileurl="file://$PROJECT_DIR$/10_Responsive/10_Responsive.iml" filepath="$PROJECT_DIR$/10_Responsive/10_Responsive.iml" />
       <module fileurl="file://$PROJECT_DIR$/11_Transitions/11_Transitions.iml" filepath="$PROJECT_DIR$/11_Transitions/11_Transitions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/12_Animations/12_Animations.iml" filepath="$PROJECT_DIR$/12_Animations/12_Animations.iml" />
     </modules>
   </component>
 </project>
