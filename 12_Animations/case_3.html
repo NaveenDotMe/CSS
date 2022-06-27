@@ -1,0 +1,64 @@
+<!--/**
+    * Created by : Naveen Pabhath
+    * Date : 6/27/2022
+    * Time : 9:50 PM
+    * Project Name : CSS
+**/-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation Case 1</title>
+
+    <style>
+        section {
+            position: relative;
+            width: 200px;
+            height: 150px;
+            /*border: 1px solid red;*/
+            background: url("assets/gif/bike.gif");
+            background-position: center;
+            background-size: cover;
+            animation-name: bike;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes bike {
+            0%{
+                top: 0;
+                left: 0;
+            }
+            25%{
+                top: 0;
+                left: 1000px;
+                transform: rotate(90deg);
+            }
+            50%{
+                top: 600px;
+                left: 1000px;
+                transform: rotate(180deg);
+            }
+            75%{
+                left: 0;
+                top: 600px;
+                transform: rotate(270deg);
+            }
+            100%{
+                top: 0;
+                left: 0;
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+<section>
+
+</section>
+</body>
+</html>
