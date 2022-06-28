@@ -1,0 +1,98 @@
+<!--/**
+    * Created by : Naveen Pabhath
+    * Date : 6/27/2022
+    * Time : 9:50 PM
+    * Project Name : CSS
+**/-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation Case 1</title>
+
+    <style>
+        main {
+            position: absolute;
+            width: 700px;
+            height: 500px;
+            /*border: 1px solid red;*/
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        main > section {
+            position: relative;
+            width: 400%;
+            height: 100%;
+            /*border: 1px solid green;*/
+            display: flex;
+            animation-name: images;
+            animation-duration: 10s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            /*animation-delay: 2s;*/
+        }
+
+        main > section > div {
+            width: 100%;
+            /*border: 2px solid blue;*/
+        }
+
+        main > section > div:nth-child(1) {
+            background: url("assets/images/1.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        main > section > div:nth-child(2) {
+            background: url("assets/images/2.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        main > section > div:nth-child(3) {
+            background: url("assets/images/3.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        main > section > div:nth-child(4) {
+            background: url("assets/images/4.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        @keyframes images {
+            0%,20%{
+                /*left: 0px;*/
+                transform: translateX(0);
+            }
+            25%,45%{
+                /*left: -700px;*/
+                transform: translateX(-25%);
+            }
+            50%,75%{
+                /*left: -1400px;*/
+                transform: translateX(-50%);
+            }
+            100%{
+                /*left: -2100px;*/
+                transform: translateX(-75%);
+            }
+
+        }
+    </style>
+
+</head>
+<body>
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+</body>
+</html>
