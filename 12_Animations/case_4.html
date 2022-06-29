@@ -12,12 +12,12 @@
     <title>Animation Case 1</title>
 
     <style>
-        body{
+        body {
             /*position: relative;*/
             background-color: #2a2a3c;
         }
 
-        body>section{
+        body > section {
             position: absolute;
             width: 100%;
             height: max-content;
@@ -64,40 +64,45 @@
             background-size: cover;
             background-position: center;
         }
+
         main > section > div:nth-child(2) {
             background: url("assets/images/2.jpg");
             background-size: cover;
             background-position: center;
         }
+
         main > section > div:nth-child(3) {
             background: url("assets/images/3.jpg");
             background-size: cover;
             background-position: center;
         }
+
         main > section > div:nth-child(4) {
             background: url("assets/images/4.jpg");
             background-size: cover;
             background-position: center;
         }
+
         @keyframes images {
-            0%,20%{
+            0%, 20% {
                 /*left: 0px;*/
                 transform: translateX(0);
             }
-            25%,45%{
+            25%, 45% {
                 /*left: -700px;*/
                 transform: translateX(-25%);
             }
-            50%,75%{
+            50%, 75% {
                 /*left: -1400px;*/
                 transform: translateX(-50%);
             }
-            100%{
+            100% {
                 /*left: -2100px;*/
                 transform: translateX(-75%);
             }
 
         }
+
     </style>
 
 </head>
@@ -110,8 +115,10 @@
         <div></div>
     </section>
 </main>
+
 <section>
     <h2>CSS SLIDER</h2>
 </section>
+
 </body>
 </html>
